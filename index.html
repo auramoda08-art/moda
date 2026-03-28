@@ -5,101 +5,99 @@
   <title>Aura Indumentaria</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- ICONOS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-    }
+    body {margin:0;font-family:Arial;}
 
     header {
-      display: flex;
-      justify-content: space-between;
-      padding: 15px 30px;
-      border-bottom: 1px solid #eee;
+      display:flex;
+      justify-content:space-between;
+      padding:15px 30px;
+      border-bottom:1px solid #eee;
     }
 
     nav a {
-      margin: 10px;
-      text-decoration: none;
-      color: black;
-      font-weight: bold;
+      margin:10px;
+      text-decoration:none;
+      color:black;
+      font-weight:bold;
     }
 
     .hero {
-      background: black;
-      color: white;
-      text-align: center;
-      padding: 80px;
+      background:black;
+      color:white;
+      text-align:center;
+      padding:80px;
     }
 
     .productos {
-      padding: 30px;
-      text-align: center;
+      padding:30px;
+      text-align:center;
     }
 
     .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:20px;
     }
 
-    .card {
-      transition: 0.3s;
-    }
-
-    .card:hover {
-      transform: scale(1.05);
-    }
+    .card {transition:0.3s;}
+    .card:hover {transform:scale(1.05);}
 
     .card img {
-      width: 100%;
-      border-radius: 10px;
+      width:100%;
+      border-radius:10px;
     }
 
     .precio {
-      font-weight: bold;
-      margin: 10px 0;
+      font-weight:bold;
+      margin:10px 0;
     }
 
     .btn {
-      background: black;
-      color: white;
-      padding: 10px;
-      text-decoration: none;
-      border-radius: 5px;
-      display: inline-block;
+      background:black;
+      color:white;
+      padding:10px;
+      text-decoration:none;
+      border-radius:5px;
+      display:inline-block;
     }
 
     .redes {
-      text-align: center;
-      margin: 30px;
+      text-align:center;
+      margin:30px;
     }
 
     .redes a {
-      margin: 10px;
-      text-decoration: none;
-      font-weight: bold;
-      color: black;
+      margin:15px;
+      font-size:20px;
+      color:black;
+      text-decoration:none;
     }
 
     .whatsapp {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background: #25D366;
-      color: white;
-      padding: 15px;
-      border-radius: 50%;
-      text-decoration: none;
-      font-size: 20px;
+      position:fixed;
+      bottom:20px;
+      right:20px;
+      background:#25D366;
+      color:white;
+      padding:15px;
+      border-radius:50%;
+      text-decoration:none;
+    }
+
+    .whatsapp i {
+      font-size:24px;
     }
 
     footer {
-      background: #111;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      margin-top: 30px;
+      background:#111;
+      color:white;
+      text-align:center;
+      padding:20px;
+      margin-top:30px;
     }
   </style>
 </head>
@@ -124,49 +122,49 @@
   <div class="grid">
 
     <div class="card">
-      <img src="estampado.jpg">
+      <img src="imgestampado-animal.jpg.png">
       <h3>Estampado Animal Conjunto</h3>
       <p class="precio">$40.000</p>
       <a href="https://wa.me/5492622466018" class="btn">Comprar</a>
     </div>
 
     <div class="card">
-      <img src="palazos.jpg">
+      <img src="imgpalazos.jpg.png">
       <h3>Palazos</h3>
       <p class="precio">$20.000</p>
       <a href="https://wa.me/5492622466018" class="btn">Comprar</a>
     </div>
 
     <div class="card">
-      <img src="body.jpg">
+      <img src="imgbody-camisa.jpg.jpeg">
       <h3>Body Camisa</h3>
       <p class="precio">$30.000</p>
       <a href="https://wa.me/5492622466018" class="btn">Comprar</a>
     </div>
 
     <div class="card">
-      <img src="buzo1.jpg">
+      <img src="imgbuzo-argentina-1.jpg.png">
       <h3>Buzo Argentina Unisex 1</h3>
       <p class="precio">$25.000</p>
       <a href="https://wa.me/5492622466018" class="btn">Comprar</a>
     </div>
 
     <div class="card">
-      <img src="buzo2.jpg">
+      <img src="imgbuzo-argentina-2.jpg.png">
       <h3>Buzo Argentina Unisex 2</h3>
       <p class="precio">$25.000</p>
       <a href="https://wa.me/5492622466018" class="btn">Comprar</a>
     </div>
 
     <div class="card">
-      <img src="chaqueta.jpg">
+      <img src="imgchaqueta.jpg.png">
       <h3>Chaqueta</h3>
       <p class="precio">$60.000</p>
       <a href="https://wa.me/5492622466018" class="btn">Comprar</a>
     </div>
 
     <div class="card">
-      <img src="jean.jpg">
+      <img src="imgpantalon-jean.jpg.jpeg">
       <h3>Pantalón de Jean</h3>
       <p class="precio">$45.000</p>
       <a href="https://wa.me/5492622466018" class="btn">Comprar</a>
@@ -177,16 +175,23 @@
 
 <!-- REDES SOCIALES -->
 <div class="redes">
-  <a href="https://www.instagram.com/auraindumentariaog?igsh=MXh6NmY5bXltcDNxaQ==" target="_blank">Instagram</a>
-  <a href="https://www.facebook.com/profile.php?id=61577531774795" target="_blank">Facebook</a>
+  <a href="https://www.instagram.com/auraindumentariaog?igsh=MXh6NmY5bXltcDNxaQ==" target="_blank">
+    <i class="fab fa-instagram"></i> Instagram
+  </a>
+
+  <a href="https://www.facebook.com/profile.php?id=61577531774795" target="_blank">
+    <i class="fab fa-facebook"></i> Facebook
+  </a>
 </div>
 
 <footer>
   <p>© 2026 Aura Indumentaria</p>
 </footer>
 
-<!-- BOTON WHATSAPP -->
-<a href="https://wa.me/5492622466018" class="whatsapp">💬</a>
+<!-- WHATSAPP -->
+<a href="https://wa.me/5492622466018" class="whatsapp">
+  <i class="fab fa-whatsapp"></i>
+</a>
 
 </body>
 </html>
