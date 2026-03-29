@@ -14,8 +14,21 @@
     header {
       display:flex;
       justify-content:space-between;
+      align-items:center;
       padding:15px 30px;
       border-bottom:1px solid #eee;
+    }
+
+    .logo {
+      display:flex;
+      align-items:center;
+      gap:10px;
+    }
+
+    .logo img {
+      width:40px;
+      height:40px;
+      border-radius:50%;
     }
 
     nav a {
@@ -43,12 +56,29 @@
       gap:20px;
     }
 
-    .card {transition:0.3s;}
+    .card {
+      position:relative;
+      transition:0.3s;
+    }
+
     .card:hover {transform:scale(1.05);}
 
     .card img {
       width:100%;
       border-radius:10px;
+    }
+
+    /* CARTEL DISPONIBLE */
+    .disponible {
+      position:absolute;
+      top:10px;
+      left:10px;
+      background:#25D366;
+      color:white;
+      padding:5px 10px;
+      font-size:12px;
+      border-radius:5px;
+      font-weight:bold;
     }
 
     .precio {
@@ -105,7 +135,11 @@
 <body>
 
 <header>
-  <h2>AURA</h2>
+  <div class="logo">
+    <img src="AURALOGO.JPG" alt="Logo">
+    <h2>AURA</h2>
+  </div>
+
   <nav>
     <a href="#">Inicio</a>
     <a href="#">Tienda</a>
@@ -121,61 +155,98 @@
 
   <div class="grid">
 
+    <!-- EXISTENTES -->
+
     <div class="card">
-      <img src="imgestampado-animal.jpg.png">
+      <div class="disponible">DISPONIBLE</div>
+      <img src="imgestampado-animal.jpg">
       <h3>Estampado Animal Conjunto</h3>
       <p class="precio">$40.000</p>
       <a href="https://wa.me/5492622466018" class="btn">Comprar</a>
     </div>
 
     <div class="card">
-      <img src="imgpalazos.jpg.png">
+      <div class="disponible">DISPONIBLE</div>
+      <img src="imgpalazos.jpg">
       <h3>Palazos</h3>
       <p class="precio">$20.000</p>
       <a href="https://wa.me/5492622466018" class="btn">Comprar</a>
     </div>
 
     <div class="card">
-      <img src="imgbody-camisa.jpg.jpeg">
+      <div class="disponible">DISPONIBLE</div>
+      <img src="imgbody-camisa.jpg">
       <h3>Body Camisa</h3>
       <p class="precio">$30.000</p>
       <a href="https://wa.me/5492622466018" class="btn">Comprar</a>
     </div>
 
+    <!-- NUEVOS PRODUCTOS -->
+
     <div class="card">
-      <img src="imgbuzo-argentina-1.jpg.png">
-      <h3>Buzo Argentina Unisex 1</h3>
+      <div class="disponible">DISPONIBLE</div>
+      <img src="OUFITCREMITA.JPG">
+      <h3>Outfit Cremita</h3>
+      <p class="precio">$Consultar</p>
+      <a href="https://wa.me/5492622466018" class="btn">Comprar</a>
+    </div>
+
+    <div class="card">
+      <div class="disponible">DISPONIBLE</div>
+      <img src="CONJUNTOBLANCO.JPG">
+      <h3>Conjunto Blanco</h3>
+      <p class="precio">$Consultar</p>
+      <a href="https://wa.me/5492622466018" class="btn">Comprar</a>
+    </div>
+
+    <div class="card">
+      <div class="disponible">DISPONIBLE</div>
+      <img src="BODYCAMISA.JPG">
+      <h3>Body Camisa</h3>
+      <p class="precio">$30.000</p>
+      <a href="https://wa.me/5492622466018" class="btn">Comprar</a>
+    </div>
+
+    <!-- OUTFIT BUZO (x4) -->
+
+    <div class="card">
+      <div class="disponible">DISPONIBLE</div>
+      <img src="OUFITBUZO.JPG">
+      <h3>Outfit Buzo</h3>
       <p class="precio">$25.000</p>
       <a href="https://wa.me/5492622466018" class="btn">Comprar</a>
     </div>
 
     <div class="card">
-      <img src="imgbuzo-argentina-2.jpg.png">
-      <h3>Buzo Argentina Unisex 2</h3>
+      <div class="disponible">DISPONIBLE</div>
+      <img src="OUFITBUZO.JPG">
+      <h3>Outfit Buzo</h3>
       <p class="precio">$25.000</p>
       <a href="https://wa.me/5492622466018" class="btn">Comprar</a>
     </div>
 
     <div class="card">
-      <img src="imgchaqueta.jpg.png">
-      <h3>Chaqueta</h3>
-      <p class="precio">$60.000</p>
+      <div class="disponible">DISPONIBLE</div>
+      <img src="OUFITBUZO.JPG">
+      <h3>Outfit Buzo</h3>
+      <p class="precio">$25.000</p>
       <a href="https://wa.me/5492622466018" class="btn">Comprar</a>
     </div>
 
     <div class="card">
-      <img src="imgpantalon-jean.jpg.jpeg">
-      <h3>Pantalón de Jean</h3>
-      <p class="precio">$45.000</p>
+      <div class="disponible">DISPONIBLE</div>
+      <img src="OUFITBUZO.JPG">
+      <h3>Outfit Buzo</h3>
+      <p class="precio">$25.000</p>
       <a href="https://wa.me/5492622466018" class="btn">Comprar</a>
     </div>
 
   </div>
 </section>
 
-<!-- REDES SOCIALES -->
+<!-- REDES -->
 <div class="redes">
-  <a href="https://www.instagram.com/auraindumentariaog?igsh=MXh6NmY5bXltcDNxaQ==" target="_blank">
+  <a href="https://www.instagram.com/auraindumentariaog" target="_blank">
     <i class="fab fa-instagram"></i> Instagram
   </a>
 
